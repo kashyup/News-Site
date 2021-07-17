@@ -23,10 +23,12 @@
     "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "rules": {
+      "no-unused-vars": "off",
+      "no-console": [
+        "warn",{ "allow":[ "clear", "info", "error", "dir", "trace", "log"]}
+      ],
+    }
   },
   "browserslist": {
     "production": [

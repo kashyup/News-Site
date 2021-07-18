@@ -1,16 +1,16 @@
 import React, { createContext, useEffect, useState } from "react";
-import axios from "axios";
+import axios from "bbc-news";
 
 export const NewsContext = createContext();
 
 export const NewsContextProvider = (props) => {
   const [data, setData] = useState();
-  const apiKey = "95c138ffafcd4e96bde4c11b783072fd";
+  const apiKey = "5c138ffafcd4e96bde4c11b783072fd";
 
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey={apiKey}`
+        `http://newsapi.org/v2/everything?q=rich&from=2020-07-19&sortBy=publishedAt&apiKey=${apiKey}`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));

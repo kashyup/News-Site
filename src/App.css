@@ -8,7 +8,7 @@ body {
   font-family: inter;
   width: 80%;
   margin: 0 auto;
-  background: rgb(251, 254, 255);
+  background: #57837B;
 }
 
 .all__news {
@@ -28,10 +28,13 @@ body {
 .news__title {
   padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
+  color: #02475E;
 }
 
 .head__text {
   margin-top: 30px;
+  text-decoration: underline;
+  color: #C9D8B6;
 }
 
 .news__desc {
@@ -43,11 +46,17 @@ body {
 
 .news__author {
   margin-right: 10px;
-  color: purple;
+  color: #548CA8;
 }
 
 .news__published {
   margin-right: 10px;
+}
+
+.news {
+  background-color: #C9D8B6 ;
+  box-shadow: 1px 2px 4px 2px #F1ECC3;
+  z-index: 2;
 }
 
 .news__source,
@@ -55,4 +64,8 @@ body {
   display: inline-block;
   margin-top: 10px;
   color: rgb(122, 122, 122);
+}
+
+.head__text {
+  color: #F8F5F1;
 }
